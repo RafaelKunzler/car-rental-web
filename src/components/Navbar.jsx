@@ -20,13 +20,13 @@ const Navbar = () => {
         </NavLink> 
 
         <div className='flex items-center'>
-            <ul className='flex gap-8'>
-                <NavLink to='/'><li>Home</li></NavLink>
-                <NavLink to='/about'><li>About</li></NavLink>
-                <NavLink to='/models'><li>Vehicle Models</li></NavLink>
-                <NavLink to='/testimonials'><li>Testimonials</li></NavLink>
-                <NavLink to='/team'><li>Our Team</li></NavLink>
-                <NavLink to='/contact'><li>Contact</li></NavLink>  
+            <ul className='flex gap-8 '>
+                <NavLink to='/'><li className='hover:text-orange-600'>Home</li></NavLink>
+                <NavLink to='/about'><li className='hover:text-orange-600'>About</li></NavLink>
+                <NavLink to='/models'><li className='hover:text-orange-600'>Vehicle Models</li></NavLink>
+                <NavLink to='/testimonials'><li className='hover:text-orange-600'>Testimonials</li></NavLink>
+                <NavLink to='/team'><li className='hover:text-orange-600'>Our Team</li></NavLink>
+                <NavLink to='/contact'><li className='hover:text-orange-600'>Contact</li></NavLink>  
                 
             </ul>
         </div>

@@ -1,11 +1,7 @@
 /* eslint-disable react/prop-types */
 import {
     Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
+    CardContent,    
 } from "@/components/ui/card"
 
 import {

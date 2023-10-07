@@ -9,6 +9,8 @@ import Banner from "@/components/Banner";
 import HorizontalInfo from "@/components/HorizontalInfo";
 import MainBanner from "@/components/MainBanner";
 import Testimonial from "@/components/Testimonial";
+import Faq from "@/components/Faq";
+import Footer from "@/components/Footer";
 
 
 const Home = () => {
@@ -134,14 +136,30 @@ const Home = () => {
             city = "Rio de Janeiro"
             grade = {99}
           />
-        </div>        
-
-
+        </div> 
       </div>
 
-      
+      <div className="pt-14">
+        <MainBanner
+          subTitle = "FAQ"
+          title = "Frequently Asked Questions"
+          description = "Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns and Inquiries."
+        />
+        <Faq />
+      </div>
 
+      <div className="bg-[url('./bg-phone.png')] bg-right">
+        <div className="flex flex-col gap-10 w-1/2 p-24">
+          <h1 className="font-bold text-6xl">Download our app to get most out of it</h1>
+          <p className="text-muted-foreground text-xl max-w-2xl">Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.</p>
+          <div className="flex gap-8">
+            <img src="./appstore.svg" alt="" />
+            <img src="./googleapp.svg" alt="" />
+          </div>
+        </div> 
+      </div>
 
+      <Footer />
       
     </div>
   )
