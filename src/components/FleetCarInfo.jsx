@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {
     Table,
     TableBody,
@@ -10,53 +11,49 @@ import {
 import { Button } from "./ui/button"
   
 
-const FleetCarInfo = () => {
-
-    const car = [{
-        model: "A1 S-Line",
-        mark: "Audi",
-        year: "2012",
-        doors: "4/5",
-        ac: "Yes",
-        transmission: "Manual",
-        fuel: "Gasoline",
-    }]
+const FleetCarInfo = (props) => {    
 
   return (
-    <div className="flex h-96 gap-x-52">
-        <img src="/cars/audi-a1.jpg" alt="" />
+    <div className="flex h-96 gap-x-32">
+        
+        <img src={props.img} alt="" className="flex self-center pl-16 mt-20"/>
 
-        <div >
-            <Table className="text-xl">
-                <TableCaption><Button>RESERVE NOW</Button></TableCaption>
-                <TableHeader>
+        <div className="">
+            <Table className="text-xl w-96 text-right">
+                <TableCaption><Button className='w-80 py-10 shadow-2xl text-2xl font-extrabold mt-4'>RESERVE NOW</Button></TableCaption>
+                <TableHeader className=''>
+                    <TableRow>
+                        <TableCell className='text-center bg-orange-500 w-screen'>
+                            <span className="font-extrabold text-3xl">${props.price}</span> / rent per day
+                        </TableCell>
+                    </TableRow>
                     <TableRow>
                         <TableHead>Model</TableHead> 
-                        <TableCell>A1 S-Line</TableCell>                                                    
+                        <TableCell className='w-96'>{props.model}</TableCell>                                                    
                     </TableRow> 
                     <TableRow>
                         <TableHead>Mark</TableHead>
-                        <TableCell>Audi</TableCell> 
+                        <TableCell>{props.mark}</TableCell> 
                     </TableRow>
                     <TableRow>
                         <TableHead>Year</TableHead>
-                        <TableCell>2012</TableCell> 
+                        <TableCell>{props.year}</TableCell> 
                     </TableRow>
                     <TableRow>
                         <TableHead>Doors</TableHead>
-                        <TableCell>4/5</TableCell> 
+                        <TableCell>{props.doors}</TableCell> 
                     </TableRow>
                     <TableRow>
                         <TableHead>AC</TableHead>
-                        <TableCell>Yes</TableCell> 
+                        <TableCell>{props.ac}</TableCell> 
                     </TableRow>
                     <TableRow>
                         <TableHead>Transmission</TableHead> 
-                        <TableCell>Manual</TableCell> 
+                        <TableCell>{props.transmission}</TableCell> 
                     </TableRow>
                     <TableRow>
                         <TableHead>Fuel</TableHead>
-                        <TableCell>Gasoline</TableCell> 
+                        <TableCell>{props.fuel}</TableCell> 
                     </TableRow>
                 </TableHeader>
                 
