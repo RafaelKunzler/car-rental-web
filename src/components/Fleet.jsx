@@ -6,7 +6,7 @@ const Fleet = () => {
 
     const [selectedCar, setSelectedCar] = useState("a1")
   return (    
-        <div className='px-4 py-12 flex flex-wrap xl:flex-nowrap mb-20 lg:py-10 lg:items-center lg:p-24 lg:justify-between ' >
+        <div className='px-4 py-12 flex flex-wrap xl:flex-nowrap mb-20 lg:py-0 lg:items-center lg:p-24 lg:justify-between ' >
             <div className='w-full lg:w-fit '>
 
             <ul className='flex flex-col gap-4'>

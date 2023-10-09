@@ -16,9 +16,13 @@ const Faq = () => {
 
   return (   
     
-    <div className=''>
+    <div className="">
+        <div className="lg:-z-10 lg:left absolute hidden lg:block">
+
+        <img src="./car-behind.png" alt=""/>
+        </div>
         <Accordion type="single" collapsible={false} defaultValue="item1" className="py-20 px-6 lg:px-80 ">
-            <div className="shadow-lg flex-wrap">
+            <div className="shadow-lg flex-wrap bg-white">
 
                 <AccordionItem  value="item1"  onClick={() => setOpen("1")} >
                     <AccordionTrigger className={open == "1" ? 'bg-orange-600 text-white  hover:no-underline ' : 'hover:no-underline'}>
@@ -28,7 +32,7 @@ const Faq = () => {
                     </AccordionTrigger>
 
                     <AccordionContent>
-                            <p className="px-12 py-8 text-lg text-muted-foreground">Comparing rental car deals is important as it helps find the best deal that fits your budget and requirements, ensuring you get the most value for your money. By comparing various options, you can find deals that offer lower prices, additional services, or better car models. You can find car rental deals by researching online and comparing prices from different rental companies.</p>
+                            <p className="px-12 py-8 text-lg text-muted-foreground ">Comparing rental car deals is important as it helps find the best deal that fits your budget and requirements, ensuring you get the most value for your money. By comparing various options, you can find deals that offer lower prices, additional services, or better car models. You can find car rental deals by researching online and comparing prices from different rental companies.</p>
                     </AccordionContent>
                 </AccordionItem>
 

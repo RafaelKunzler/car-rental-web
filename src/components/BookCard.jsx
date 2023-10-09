@@ -44,7 +44,8 @@ const BookCard = () => {
                             'BMW 320 ModernLine',
                             'Mercedez-Benz GLK',
                             'VW Passat CC'
-                        ]}                
+                        ]}  
+                                      
                     />
                 </div>  
 
