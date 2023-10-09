@@ -13,7 +13,6 @@ import { Button } from "./ui/button"
 
 import { CalendarDays, Car, MapPin } from "lucide-react"
 
-import { useState, useEffect } from "react"
 import BookCardSelect from "./BookCardSelect"
 import BookCardCalendar from "./BookCardCalendar"
 
@@ -24,18 +23,18 @@ const BookCard = () => {
     }
 
   return (
-    <div className="m-24">
+    <div className=" p-4 md:p-24 ">
         <Card className='p-8 shadow-2xl '>
         <CardHeader>
-          <CardTitle className='text-3xl font-bold'>Book a car</CardTitle>
+          <CardTitle className='text-3xl font-bold mb-5 '>Book a car</CardTitle>
         </CardHeader>
-        <CardContent className=" text-2xl font-semibold ">
+        <CardContent className=" text-2xl font-semibold  ">
           <form onSubmit={handleSubmit}>            
 
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid lg:grid-cols-3 gap-8 ">
 
                 <div className="flex flex-col gap-4 ">
-                    <h1 className="flex"><Car />Select Your Car Type<span className="text-orange-600">*</span></h1>
+                    <h1 className="flex gap-4 items-center"><Car />Car<span className="text-orange-600">*</span></h1>
                     <BookCardSelect                 
                         placeholder='Select Your Car Type'
                         options={[
@@ -49,8 +48,8 @@ const BookCard = () => {
                     />
                 </div>  
 
-                <div className="flex flex-col gap-4">
-                    <h1 className="flex"><MapPin />Pick-up<span className="text-orange-600">*</span></h1>
+                <div className="flex flex-col gap-4 ">
+                    <h1 className="flex gap-4 items-center"><MapPin />Pick-up<span className="text-orange-600">*</span></h1>
                     <BookCardSelect                 
                         placeholder='Select pick up location'
                         options={[
@@ -65,7 +64,7 @@ const BookCard = () => {
                 </div> 
 
                 <div className="flex flex-col gap-4">
-                    <h1 className="flex"><MapPin />Drop-of<span className="text-orange-600">*</span></h1>
+                    <h1 className="flex gap-4 items-center"><MapPin />Drop-of<span className="text-orange-600">*</span></h1>
                     <BookCardSelect                 
                         placeholder='Select drop of location'
                         options={[
@@ -80,8 +79,8 @@ const BookCard = () => {
                 </div>             
 
                 <div >
-                    <label className="flex flex-col gap-4">
-                        <div className="flex">
+                    <label className="flex flex-col gap-4 ">
+                        <div className="flex gap-4 items-center">
                             <CalendarDays />Pick-up<span className="text-orange-600">*</span>
                         </div>
                         <BookCardCalendar />
@@ -89,15 +88,15 @@ const BookCard = () => {
                 </div>
 
                 <div >
-                    <label className="flex flex-col gap-4">
-                        <div className="flex">
+                    <label className="flex flex-col gap-4 ">
+                        <div className="flex gap-4 items-center">
                             <CalendarDays />Drop-of<span className="text-orange-600">*</span>
                         </div>
                         <BookCardCalendar />
                     </label>
                 </div>
 
-                <Button className='self-end h-20 text-2xl'>Search</Button>              
+                <Button className='self-end h-20 text-2xl '>Search</Button>              
               
             </div>
           </form>

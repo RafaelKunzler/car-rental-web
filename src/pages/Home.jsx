@@ -17,29 +17,29 @@ const Home = () => {
   return (
     <div className="">
 
-      <div className="flex w-full items-center justify-around px-24">
-        <div className='flex flex-col gap-8'>
-          <h3 className="text-3xl font-semibold">Plan your trip now</h3>
-          <h1 className="text-6xl font-black">Save <span className="text-orange-600">big</span> with our car rental</h1>
+      <div className="flex items-center top-0 text-center justify-around content-center lg:py-12 lg:px-24 lg:text-left lg:justify-normal">
+        <div className=' flex flex-col gap-4 px-2 lg:gap-8'>
+          <h3 className=" text-2xl font-bold lg:font-semibold lg:text-3xl">Plan your trip now</h3>
+          <h1 className="font-black text-6xl">Save <span className="text-orange-600">big</span> with our car rental</h1>
           <p className="text-lg text-gray-600">Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</p>
-          <div className="flex gap-8">
-            <Button className='flex p-10 gap-4 text-xl font-bold'>
+          <div className=" flex gap-8 items-center flex-col lg:flex-row">
+            <Button className='flex  p-10 gap-4 text-xl font-bold '>
               Book Ride <CheckCircle2/>
-              </Button>
+            </Button>
             <Button className='flex p-10 gap-4 text-xl font-bold bg-black'>Learn More <ChevronRight /></Button>
           </div>        
         </div>
-        <img src="./public/main-car.png" alt="red car" className="w-120 h-120"/>
+        <img src="./public/main-car.png" alt="red car" className="w-[620px] h-[400px] hidden xl:block"/>
       </div>     
 
       <BookCard /> 
 
-      <div className="flex flex-col gap-24 m-28">
-        <div className="flex flex-col gap-6 items-center">
-          <h3 className="font-bold text-3xl">Plan your trip now</h3>
-          <h1 className="font-black text-6xl">Quick & easy car rental</h1>          
+      <div className="px-4 py-12 flex flex-col gap-24 lg:p-24 ">
+        <div className="flex flex-col gap-6 items-center text-center ">
+          <h3 className="font-medium text-3xl lg:font-bold">Plan your trip now</h3>
+          <h1 className="font-extrabold text-5xl lg:font-black lg:text-6xl">Quick & easy car rental</h1>          
         </div>
-        <div className="flex gap-48">
+        <div className="flex flex-wrap gap-12 lg:gap-48 lg:flex-nowrap ">
           <VerticalInfo 
             image='./public/selectCar.png'
             title='Select Car'
@@ -60,36 +60,37 @@ const Home = () => {
         </div>        
       </div>
 
-      <div className="pt-14">
+      <div className="px-4 py-12 lg:pt-14 lg:p-24 ">
         <MainBanner 
           subTitle = 'Vehicle Models'
           title = 'Our rental fleet'
           description = 'Choose from a variety of our amazing vehicles to rent for your next adventure or business trip'
         />
-        <Fleet />
       </div>
+      
+      <Fleet />
       
       <Banner />
 
       <img 
-        className="flex items-center w-full p-28"
+        className="flex items-center py-12 px-28 w-screen"
         src="./3car-main.png" alt="3 cars" 
       />
 
-      <div className="flex justify-between px-24">
-        <div className="flex flex-col gap-10">
+      <div className="flex justify-between px-24 gap-24 w- flex-wrap lg:flex-nowrap ">
+        <div className="flex flex-col gap-10 ">
 
-          <div className="flex flex-col gap-4">
-            <h3 className="font-bold text-3xl">Why Choose Us</h3>
-            <h1 className="font-bold text-6xl max-w-2xl">Best valued deals you will ever find</h1>
+          <div className="flex flex-col gap-4 text-center lg:text-left">
+            <h3 className="font-bold text-2xl lg:text-3xl">Why Choose Us</h3>
+            <h1 className="font-bold text-5xl max-w-2xl">Best valued deals you will ever find</h1>
           </div>
 
-            <p className="text-muted-foreground text-xl max-w-2xl">Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big.</p>
+            <p className="text-muted-foreground text-lg text-center lg:text-left lg:text-xl max-w-2xl">Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big.</p>
 
-          <Button className='flex p-10 gap-4 text-xl font-bold w-60'>Find Details <ChevronRight /></Button>
+          <Button className='flex p-10 gap-4 text-xl font-bold lg:w-60'>Find Details <ChevronRight /></Button>
         </div>
 
-        <div className="flex flex-col gap-9">
+        <div className="flex flex-col gap-9 ">
           <HorizontalInfo
             img = "./car-alert.png"
             title = "Cross Country Drive"
@@ -111,8 +112,8 @@ const Home = () => {
 
       </div>
 
-      <div className="bg-stone-100">
-        <div className="pt-14 mt-28 w-screen">
+      <div className=" bg-stone-100">
+        <div className="pt-14 mt-28">
             <MainBanner 
               subTitle = 'Reviewed by People'
               title = "Client's Testimonials"
@@ -120,22 +121,28 @@ const Home = () => {
             />          
         </div>
 
-        <div className="flex py-24 px-32 gap-8">
-          <Testimonial 
-            img = "./luffy.jpg"
-            text = '"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable, perfect for the king of the pirates!"' 
-            name = "Monkey D. Luffy"
-            city = "Guarulhos"
-            grade = "99"
-          />
+        <div className="flex py-24 px-12 gap-8 lg:px-32">
+          <div className="w-full lg:w-2/4 ">
+            <Testimonial 
+              img = "./luffy.jpg"
+              text = '"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable, perfect for the king of the pirates!"' 
+              name = "Monkey D. Luffy"
+              city = "Guarulhos"
+              grade = "99"
+            />
 
-          <Testimonial 
-            img = "./zoro.jpg"
-            text = '"The car was in great condition and made our trip even better, even though I got lost. Highly recommend for this car rental website!"' 
-            name = "Ronoroa Zoro"
-            city = "Rio de Janeiro"
-            grade = {99}
-          />
+          </div>
+          
+          <div className="w-2/4 hidden lg:block" >
+            <Testimonial  
+              img = "./zoro.jpg"
+              text = '"The car was in great condition and made our trip even better, even though I got lost. Highly recommend for this car rental website!"' 
+              name = "Ronoroa Zoro"
+              city = "Rio de Janeiro"
+              grade = {99}
+            />
+          </div>
+
         </div> 
       </div>
 
@@ -148,11 +155,11 @@ const Home = () => {
         <Faq />
       </div>
 
-      <div className="bg-[url('./bg-phone.png')] bg-right">
-        <div className="flex flex-col gap-10 w-1/2 p-24">
+      <div className="text-center  lg:text-left">
+        <div className="px-4 py-12 flex flex-col gap-10 lg:w-1/2 lg:p-24">
           <h1 className="font-bold text-6xl">Download our app to get most out of it</h1>
-          <p className="text-muted-foreground text-xl max-w-2xl">Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.</p>
-          <div className="flex gap-8">
+          <p className="text-muted-foreground text-xl lg:max-w-2xl">Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.</p>
+          <div className="flex flex-wrap gap-8 items-center justify-center lg:flex-nowrap">
             <img src="./appstore.svg" alt="" />
             <img src="./googleapp.svg" alt="" />
           </div>

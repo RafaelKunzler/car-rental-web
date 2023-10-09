@@ -12,30 +12,29 @@ import {
 
 const Testimonial = (props) => {
   return (
-    <div className="w-2/4 ">
+    <>
         <Card>
 
-            <CardContent className='flex flex-col p-16 h-[450px] justify-between'>                
-                    <h3 className="text-3xl font-semibold">{props.text}</h3>
+            <CardContent className='flex flex-col  h-full gap-16 justify-between p-16 lg:gap-0 lg:h-[450px]'>                
+                    <h3 className="text-lg lg:text-3xl font-semibold">{props.text}</h3>
                     <div className="flex  items-center justify-between ">
                         <div className="flex gap-6">
-                            <Avatar className='w-20 h-20'>
-                                <AvatarImage  src={props.img}/>
-                                <AvatarFallback>LU</AvatarFallback>
+                            <Avatar className='w-16 h-16 lg:w-20 lg:h-20'>
+                                <AvatarImage  src={props.img}/>                                
                             </Avatar>
                             <div className="flex items-center ">
                                 <div>
-                                    <h3 className="font-bold text-xl">{props.name}</h3>
-                                    <p className="font-medium text-lg">{props.city}</p>
+                                    <h3 className="font-bold text-md lg:text-xl">{props.name}</h3>
+                                    <p className="font-medium text-sm lg:text-lg">{props.city}</p>
                                 </div>                        
                             </div>
                         </div>                    
-                        <span className="text-6xl text-orange-600">{props.grade}</span>                
+                        <span className="hidden lg:block text-6xl text-orange-600">{props.grade}</span>                
                     </div>
             </CardContent>
 
         </Card>
-    </div>
+    </>
   )
 }
 

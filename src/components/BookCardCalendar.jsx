@@ -19,15 +19,15 @@ const BookCardCalendar = () => {
     const [date, setDate] = useState()
 
   return (
-    <div>
+    <div className="">
         <Popover open={calendarOpen} onOpenChange={setCalendarOpen}>
             <PopoverTrigger asChild>
-                <Button className='flex gap-72 text-muted-foreground' variant={"outline"}>
+                <Button className='flex w-full justify-between text-muted-foreground' variant={"outline"}>
                     {date ? format(date, "P") : <span>Pick a date</span>}
                     <CalendarIcon />
                 </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-auto  p-0" align="start">
+            <PopoverContent className="p-0" align="start">
                 <Calendar
                     mode='single'
                     selected={date}

@@ -14,10 +14,10 @@ import Contact from './pages/Contact';
 function App() {  
 
   return (
-    <>             
+    <div className=''>             
       <BrowserRouter>        
         <Navbar />         
-        <div>
+        <div >
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
@@ -28,10 +28,10 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>   
-      <div className='-z-10 absolute right-0 top-0' >
+      <div className='-z-10 absolute right-0 top-0 hidden lg:block' >
           <img src="./public/main-bg.png" alt="" />
       </div>    
-    </>
+    </div>
   )
 }
 

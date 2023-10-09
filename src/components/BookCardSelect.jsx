@@ -16,10 +16,10 @@ const BookCardSelect = (props) => {
                         {props.title}
                     </div>
                     <Select>
-                    <SelectTrigger className='text-muted-foreground'>
+                    <SelectTrigger className='text-muted-foreground '>
                       <SelectValue placeholder={props.placeholder} />
                     </SelectTrigger>
-                    <SelectContent position="popper" className='text-muted-foreground'>
+                    <SelectContent position="popper" className='text-muted-foreground '>
                         {props.options.map((option) => 
                             <SelectItem key={option} value={option}>{option}</SelectItem>
                         )}                         

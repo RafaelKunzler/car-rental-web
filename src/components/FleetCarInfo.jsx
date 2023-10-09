@@ -14,22 +14,24 @@ import { Button } from "./ui/button"
 const FleetCarInfo = (props) => {    
 
   return (
-    <div className="flex h-96 gap-x-32">
+    <div className="flex h-full mt-4 lg:mt-20  justify-center items-center flex-wrap md:flex-nowrap  lg:justify-between ">
         
-        <img src={props.img} alt="" className="flex self-center pl-16 mt-20"/>
+        <div>
+            <img src={props.img} alt="" className="px-16  lg:mt-24 lg:max-w-xl hidden sm:block lg:hidden xl:block "/>
+        </div>
 
-        <div className="">
-            <Table className="text-xl w-96 text-right">
-                <TableCaption><Button className='w-80 py-10 shadow-2xl text-2xl font-extrabold mt-4'>RESERVE NOW</Button></TableCaption>
+        <div className="mt-7 lg:mt-28 ">
+            <Table className="text-xl text-right">
+                <TableCaption><Button className='w-full py-6 shadow-2xl text-2xl font-extrabold lg:py-10 lg:w-60'>RESERVE NOW</Button></TableCaption>
                 <TableHeader className=''>
                     <TableRow>
-                        <TableCell className='text-center bg-orange-500 w-screen'>
+                        <TableCell className='text-center bg-orange-500 xl:w-screen'>
                             <span className="font-extrabold text-3xl">${props.price}</span> / rent per day
                         </TableCell>
                     </TableRow>
                     <TableRow>
                         <TableHead>Model</TableHead> 
-                        <TableCell className='w-96'>{props.model}</TableCell>                                                    
+                        <TableCell className='xl:w-96 '>{props.model}</TableCell>                                                    
                     </TableRow> 
                     <TableRow>
                         <TableHead>Mark</TableHead>
