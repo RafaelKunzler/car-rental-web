@@ -1,40 +1,42 @@
-/* eslint-disable react/prop-types */
-import {
-    Card,
-    CardContent,    
-} from "@/components/ui/card"
 
-import {
-    Avatar,
-    AvatarFallback,
-    AvatarImage,
-} from "@/components/ui/avatar"
+import MainBanner from './MainBanner'
+import TestimonialCard from './TestimonialCard'
 
-const Testimonial = (props) => {
+const Testimonial = () => {
   return (
-    <>
-        <Card>
+    <div className=" bg-stone-100">
+        <div className="pt-14 mt-28">
+            <MainBanner
+              subTitle = 'Reviewed by People'
+              title = "Client's Testimonials"
+              description = "Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you."
+            />          
+        </div>
 
-            <CardContent className='flex flex-col  h-full gap-16 justify-between p-16 lg:gap-0 lg:h-[450px]'>                
-                    <h3 className="text-lg lg:text-3xl font-semibold">{props.text}</h3>
-                    <div className="flex  items-center justify-between ">
-                        <div className="flex gap-6">
-                            <Avatar className='w-16 h-16 lg:w-20 lg:h-20'>
-                                <AvatarImage  src={props.img}/>                                
-                            </Avatar>
-                            <div className="flex items-center ">
-                                <div>
-                                    <h3 className="font-bold text-md lg:text-xl">{props.name}</h3>
-                                    <p className="font-medium text-sm lg:text-lg">{props.city}</p>
-                                </div>                        
-                            </div>
-                        </div>                    
-                        <span className="hidden lg:block text-6xl text-orange-600">{props.grade}</span>                
-                    </div>
-            </CardContent>
+        <div className="flex py-24 px-12 gap-8 lg:px-32">
+          <div className="w-full lg:w-2/4 ">
+            <TestimonialCard 
+              img = "./luffy.jpg"
+              text = '"I rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable, perfect for the king of the pirates!"' 
+              name = "Monkey D. Luffy"
+              city = "Guarulhos"
+              grade = "99"
+            />
 
-        </Card>
-    </>
+          </div>
+          
+          <div className="w-2/4 hidden lg:block" >
+            <TestimonialCard  
+              img = "./zoro.jpg"
+              text = '"The car was in great condition and made our trip even better, even though I got lost. Highly recommend for this car rental website!"' 
+              name = "Ronoroa Zoro"
+              city = "Rio de Janeiro"
+              grade = {99}
+            />
+          </div>
+        </div> 
+        
+      </div>
   )
 }
 

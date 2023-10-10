@@ -37,7 +37,7 @@ const Navbar = () => {
             
         </div>
 
-        <div className='hidden xl:block flex items-center py-6 lg:py-0 lg:flex-row'>
+        <div className='hidden lg:block items-center py-6 lg:py-0 lg:flex-row text-lg'>
 
             <ul className='flex gap-8 object-left lg:flex-row flex-col lg:items-center'>
                 <NavLink to='/'><li className='hover:text-orange-600 '>Home</li></NavLink>

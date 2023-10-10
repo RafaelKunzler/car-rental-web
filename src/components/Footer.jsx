@@ -24,8 +24,8 @@ const Footer = () => {
                     <p className="text-muted-foreground text-lg">We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.</p>
                 </div>
                 <div className="flex flex-col gap-5 w-full ">
-                    <h3 className="flex gap-3 font-bold text-lg text-center justify-center"><PhoneCall /> (12) 3456-7890 </h3>
-                    <h3 className="flex gap-3 font-bold text-lg justify-center"><Mail /> carrental@gmail.com</h3>
+                    <h3 className="flex gap-3 font-bold text-lg text-center justify-center lg:justify-start"><PhoneCall /> (12) 3456-7890 </h3>
+                    <h3 className="flex gap-3 font-bold text-lg justify-center lg:justify-start"><Mail /> carrental@gmail.com</h3>
                 </div>
             </div>
 

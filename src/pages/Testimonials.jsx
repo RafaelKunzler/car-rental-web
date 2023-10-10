@@ -1,8 +1,16 @@
-import React from 'react'
+import BackToTopButton from '@/components/BackToTopButton'
+import CallUsBanner from '@/components/CallUsBanner'
+import Footer from '@/components/Footer'
+import Testimonial from '@/components/Testimonial'
 
 const Testimonials = () => {
   return (
-    <div>Testimonials</div>
+    <div>
+      <Testimonial />
+      <CallUsBanner />
+      <Footer />
+      <BackToTopButton />
+    </div>
   )
 }
 
