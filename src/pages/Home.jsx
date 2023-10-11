@@ -128,7 +128,7 @@ const Home = () => {
         <Faq />
       </div>
 
-      <div className="text-center  lg:text-left lg:bg-[url('./bg-phone.png')] lg:bg-no-repeat lg:bg-cover lg:bg-bottom ">
+      <div className="text-center  lg:text-left lg:bg-[url('/bg-phone.png')] lg:bg-no-repeat lg:bg-cover lg:bg-bottom ">
         <div className="px-4 py-12 flex flex-col gap-10 lg:w-1/2 lg:p-24">
           <h1 className="font-bold text-6xl">Download our app to get most out of it</h1>
           <p className="text-muted-foreground text-xl lg:max-w-2xl">Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.</p>
