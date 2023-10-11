@@ -51,19 +51,19 @@ const About = () => {
             </div>
           <div className="flex flex-wrap gap-12 lg:gap-48 lg:flex-nowrap ">
             <VerticalInfo
-              image='./public/selectCar.png'
+              image='/selectCar.png'
               title='Select Car'
               description='We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs'
             />
 
             <VerticalInfo 
-              image='./public/contact.png'
+              image='/contact.png'
               title='Contact Operator'
               description='Our knowledgeable and friendly operators are always ready to help with any questions or concerns'
             />
 
             <VerticalInfo 
-              image='./public/drive.png'
+              image='/drive.png'
               title="Let's Drive"
               description="Whether you're hitting the open road, we've got you covered with our wide range of cars"
             />

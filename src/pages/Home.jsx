@@ -24,7 +24,7 @@ const Home = () => {
 
       <div className="flex items-center top-0 text-center justify-around content-center lg:py-12 lg:px-24 lg:text-left lg:justify-normal">
         <div className=' flex flex-col gap-4 px-2 lg:gap-8'>
-          <h3 className=" text-2xl font-bold lg:font-semibold lg:text-3xl">Plan your trip now</h3>
+          <h3 className=" text-2xl font-bold lg:font-semibold lg:text-3xl">Plan your trip now</h3>          
           <h1 className="font-black text-6xl">Save <span className="text-orange-600">big</span> with our car rental</h1>
           <p className="text-lg text-gray-600">Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</p>
           <div className=" flex gap-8 items-center flex-col lg:flex-row">
@@ -34,7 +34,7 @@ const Home = () => {
             <Button className='flex p-10 gap-4 text-xl font-bold bg-black'>Learn More <ChevronRight /></Button>
           </div>        
         </div>
-        <img src="./public/main-car.png" alt="red car" className="w-[620px] h-[400px] hidden xl:block"/>
+        <img src="./main-car.png" alt="red car" className="w-[620px] h-[400px] hidden xl:block"/>
       </div>     
 
       <BookCard /> 
@@ -46,19 +46,19 @@ const Home = () => {
         </div>
         <div className="flex flex-wrap gap-12 lg:gap-48 lg:flex-nowrap ">
           <VerticalInfo 
-            image='./public/selectCar.png'
+            image='/selectCar.png'
             title='Select Car'
             description='We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs'
           />
 
           <VerticalInfo 
-            image='./public/contact.png'
+            image='/contact.png'
             title='Contact Operator'
             description='Our knowledgeable and friendly operators are always ready to help with any questions or concerns'
           />
 
           <VerticalInfo 
-            image='./public/drive.png'
+            image='/drive.png'
             title="Let's Drive"
             description="Whether you're hitting the open road, we've got you covered with our wide range of cars"
           />
@@ -133,8 +133,8 @@ const Home = () => {
           <h1 className="font-bold text-6xl">Download our app to get most out of it</h1>
           <p className="text-muted-foreground text-xl lg:max-w-2xl">Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.</p>
           <div className="flex flex-wrap gap-8 items-center justify-center lg:flex-nowrap">
-            <img src="./appstore.svg" alt="" />
-            <img src="./googleapp.svg" alt="" />
+            <img src="/appstore.svg" alt="" />
+            <img src="/googleapp.svg" alt="" />
           </div>
         </div> 
       </div>

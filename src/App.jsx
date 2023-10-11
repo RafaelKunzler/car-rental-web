@@ -31,7 +31,7 @@ function App() {
         </div>
       </BrowserRouter>   
       <div className='-z-10 absolute right-0 top-0 hidden lg:block' >
-          <img src="./public/main-bg.png" alt="" />
+          <img src="/main-bg.png" alt="" />
       </div>    
       
     </div>
