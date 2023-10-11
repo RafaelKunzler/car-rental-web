@@ -9,7 +9,7 @@ const Models = () => {
     <div className="flex flex-col gap-10">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 px-16 sm:px-32 md:px-16 lg:px-24">
         <ModelCard 
-          image = './carModels/audiA1.png'
+          image = '/carModels/audiA1.png'
           car = "A1"
           price = "45"
           mark = "Audi"
@@ -19,7 +19,7 @@ const Models = () => {
         />
 
         <ModelCard 
-          image = './carModels/golf6.png'
+          image = '/carModels/golf6.png'
           car = "Golf 6"
           price = "37"
           mark = "VW"
@@ -29,7 +29,7 @@ const Models = () => {
         />
 
         <ModelCard 
-          image = './carModels/camry.png'
+          image = '/carModels/camry.png'
           car = "Camry"
           price = "30"
           mark = "Toyota"
@@ -39,7 +39,7 @@ const Models = () => {
         />
 
         <ModelCard 
-          image = './carModels/320.png'
+          image = '/carModels/320.png'
           car = "320"
           price = "35"
           mark = "BMW"
@@ -49,7 +49,7 @@ const Models = () => {
         />
 
         <ModelCard 
-          image = './carModels/glk.png'
+          image = '/carModels/glk.png'
           car = "GLK"
           price = "50"
           mark = "Mercedes"
@@ -59,7 +59,7 @@ const Models = () => {
         />
 
         <ModelCard 
-          image = './carModels/passat.png'
+          image = '/carModels/passat.png'
           car = "Passat CC"
           price = "25"
           mark = "Volkswagen"
