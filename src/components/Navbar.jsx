@@ -54,19 +54,17 @@ const Navbar = () => {
 
         {isOpen ? 
             <div className='xl:hidden flex items-center py-6 lg:py-0 lg:flex-row'>
-
-            <ul className='flex gap-8 object-left lg:flex-row flex-col lg:items-center'>
-                <NavLink to='/'><li onClick={handleToggleMenu} className='hover:text-orange-600'>Home</li></NavLink>
-                <NavLink to='/about'><li onClick={handleToggleMenu} className='hover:text-orange-600'>About</li></NavLink>
-                <NavLink to='/models'><li onClick={handleToggleMenu} className='hover:text-orange-600'>Vehicle Models</li></NavLink>
-                <NavLink to='/testimonials'><li onClick={handleToggleMenu} className='hover:text-orange-600'>Testimonials</li></NavLink>
-                <NavLink to='/team'><li onClick={handleToggleMenu} className='hover:text-orange-600'>Our Team</li></NavLink>
-                <NavLink to='/contact'><li onClick={handleToggleMenu} className='hover:text-orange-600'>Contact</li></NavLink>  
-                
-                <Button className='px-11 py-8 text-2xl lg:hidden'>Login</Button>
-                
-            </ul>
-        </div> :
+                <ul className='flex gap-8 object-left lg:flex-row flex-col lg:items-center'>
+                    <NavLink to='/'><li onClick={handleToggleMenu} className='hover:text-orange-600'>Home</li></NavLink>
+                    <NavLink to='/about'><li onClick={handleToggleMenu} className='hover:text-orange-600'>About</li></NavLink>
+                    <NavLink to='/models'><li onClick={handleToggleMenu} className='hover:text-orange-600'>Vehicle Models</li></NavLink>
+                    <NavLink to='/testimonials'><li onClick={handleToggleMenu} className='hover:text-orange-600'>Testimonials</li></NavLink>
+                    <NavLink to='/team'><li onClick={handleToggleMenu} className='hover:text-orange-600'>Our Team</li></NavLink>
+                    <NavLink to='/contact'><li onClick={handleToggleMenu} className='hover:text-orange-600'>Contact</li></NavLink>  
+                    
+                    <Button className='px-11 py-8 text-2xl lg:hidden'>Login</Button>                    
+                </ul>
+            </div> :
         ''
         }        
 
